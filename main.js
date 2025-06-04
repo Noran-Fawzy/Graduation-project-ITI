@@ -31,7 +31,7 @@ startButton.addEventListener("click", () => {
 function createBirds() {
     for (let i = 0; i < birdCount; i++) {
         let bird = document.createElement("img");
-        bird.src = "images/alive-bird.gif";
+        bird.src = "alive-bird.gif";
         bird.classList.add("bird");
         bird.style.left = `${Math.random() * (window.innerWidth - 50)}px`;
         bird.style.top = `${Math.random() * (window.innerHeight - 50)}px`;
@@ -55,7 +55,7 @@ function moveBird(bird) {
 }
 
 function killBird(bird) {
-    bird.src = "images/dead-bird.png";
+    bird.src = "dead-bird.png";
     bird.classList.add("dead");
     bird.style.transition = "top 2s linear";
     bird.style.top = `${window.innerHeight}px`;
